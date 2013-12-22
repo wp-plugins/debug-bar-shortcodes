@@ -67,13 +67,14 @@ This plugin is only meant to be used for development purposes, but shouldn't cau
 [Source](http://en.support.wordpress.com/shortcodes/)
 
 For more information about using shortcodes in WordPress:
-[WP Codex on shortcodes](http://codex.wordpress.org/Shortcode)
-[WP Codex on the Shortcode API](http://codex.wordpress.org/Shortcode_API)
+-	[WP Codex on shortcodes](http://codex.wordpress.org/Shortcode)
+-	[WP Codex on the Shortcode API](http://codex.wordpress.org/Shortcode_API)
 
 
 = Why is my shortcode not listed ? =
 
 There are two possibilities here:
+
 * Either your shortcode has [not been properly registered](http://codex.wordpress.org/Function_Reference/add_shortcode) using the ShortCode API.
 * Or your shortcode might only be registered conditionally and the current page does not meet those conditions.
 
@@ -84,11 +85,11 @@ See the previous answer.
 
 = I'm using shortcode *abc* in page *xyz* and it doesn't show as used! =
 
-To determine whether a shortcode is used in a page, only the *post content* is evaluated. If you add content to the page using shortcodes in other areas (for example: widgets) or via the theme, those uses will not be recognized.
+To determine whether a shortcode is used in a page, only the _**post content**_ is evaluated. If you add content to the page using shortcodes in other areas (for example: widgets) or via the theme, those uses will not be recognized.
 
 
 = Can I use these shortcodes in the theme I'm building ? =
-Generally speaking you can. However, don't forget to always [check whether the shortcode is registered](http://codex.wordpress.org/Function_Reference/shortcode_exists) before you use it (in a theme)! It may not be available on all pages and surely not on all WP installs.
+Generally speaking you can. However, don't forget to always [check whether the shortcode is registered](http://codex.wordpress.org/Function_Reference/shortcode_exists) before you use it! It may not be available on all pages and surely not on all WP installs.
 `
 if( shortcode_exists( 'shortcode' ) ) {
 	/* Your code here */
