@@ -12,7 +12,7 @@ Debug Bar Shortcodes adds a new panel to the Debug Bar that displays the registe
 
 == Description ==
 
-Debug Bar Shortcodes adds a new panel to the Debug Bar that displays the registered shortcodes for the current request.
+Debug Bar Shortcodes adds a new panel to the [Debug Bar](http://wordpress.org/extend/plugins/debug-bar/) that displays the registered shortcodes for the current request.
 
 Additionally it will show you:
 
